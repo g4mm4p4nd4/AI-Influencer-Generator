@@ -18,6 +18,20 @@ If you enjoy using AI Influencer, we'd appreciate your support with a star ⭐ o
 
 Open the colab notebook from [here](https://github.com/SamurAIGPT/AI-Influencer/blob/main/AI_Influencer.ipynb) and run all the steps one-by-one
 
+### Local Environment Setup
+
+1. Install **Python 3.8** and create a virtual environment:
+   ```bash
+   python3.8 -m venv venv
+   source venv/bin/activate
+   ```
+2. Install the required packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Install PyTorch with GPU support by following the [official instructions](https://pytorch.org/get-started/locally/) for your CUDA setup.
+4. A CUDA-capable GPU is recommended for stable diffusion image generation and lip-sync rendering.
+
 ### Technologies used
 
 gTTS for text to speech
