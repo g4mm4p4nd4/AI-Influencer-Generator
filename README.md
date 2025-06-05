@@ -20,7 +20,9 @@ Open the colab notebook from [here](https://github.com/SamurAIGPT/AI-Influencer/
 
 ### Technologies used
 
-Text-to-speech via [Bark](https://github.com/suno-ai/bark) or [Coqui TTS](https://github.com/coqui-ai/TTS)
+gTTS for simple text-to-speech
+
+Bark or [Coqui TTS](https://github.com/coqui-ai/TTS) for high-quality voice synthesis
 
 Sad-Talker for lip-sync
 
@@ -33,9 +35,10 @@ Stable diffusion for image generation
 The repository ships with a small utility [`voice_synthesis.py`](./voice_synthesis.py)
 that can generate speech either with [Bark](https://github.com/suno-ai/bark) or
 [Coqui TTS](https://github.com/coqui-ai/TTS). Select the engine with the
-`TTS_ENGINE` environment variable. The default is `bark`.
+`TTS_ENGINE` environment variable or pass `--engine` when calling the script.
+The default engine is `bark`.
 
-Example:
+Set the environment variable:
 
 ```bash
 export TTS_ENGINE=coqui  # or "bark"
@@ -44,6 +47,9 @@ export TTS_ENGINE=coqui  # or "bark"
 ```python
 from voice_synthesis import generate_voice
 audio_file = generate_voice("Hello world!", voice_profile=None)
+
+# Or from the command line
+python voice_synthesis.py "Hello world!" --engine coqui
 ```
 
 Specify a voice profile when using Bark (e.g. `"en_speaker_6"`) or a model name
