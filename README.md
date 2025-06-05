@@ -16,7 +16,17 @@ If you enjoy using AI Influencer, we'd appreciate your support with a star ⭐ o
 
 ### Steps to run
 
-Open the colab notebook from [here](https://github.com/SamurAIGPT/AI-Influencer/blob/main/AI_Influencer.ipynb) and run all the steps one-by-one
+Install the required packages and run the `ai_influencer.py` script:
+
+```bash
+pip install -r requirements.txt
+export OPENAI_API_KEY=<your-key>
+python ai_influencer.py "male European, wearing glasses" "Hello world"
+```
+
+The lightweight pipeline generates an example image and a voiceover WAV file. The
+lip-sync stage used in the original notebook is omitted in this simplified
+script.
 
 ### Technologies used
 
