@@ -1,0 +1,14 @@
+openai
+gtts
+accelerate
+transformers
+huggingface-hub
+Pillow
+requests
+numpy
+fsspec
+importlib-metadata
+click
+psutil
+diffusers
+
