@@ -1,0 +1,29 @@
+# Core libraries
+torch==1.12.1+cu113
+torchvision==0.13.1+cu113
+torchaudio==0.12.1
+
+# Generative models
+accelerate
+transformers
+diffusers
+
+gtts
+openai
+ffmpeg-python
+pillow
+requests
+opencv-python
+pydub
+imageio
+imageio-ffmpeg
+ffmpy
+face-alignment
+basicsr
+gfpgan
+facexlib
+gradio
+fastapi
+filterpy
+librosa
+uvicorn
